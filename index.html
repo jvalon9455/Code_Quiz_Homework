@@ -22,8 +22,8 @@
 
   <body>
     <!-- Begin navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Highscores</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">View Highscores</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -37,30 +37,35 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto"></ul>
-        <span class="navbar-text"> Timer </span>
+        <span class="navbar-text" id="time-clock"> Timer </span>
       </div>
     </nav>
     <!-- End navbar -->
 
     <!-- Create a card to hold instructions and button -->
-    <div class="card text-center">
-      <div class="card-body">
-        <h2 class="card-title">Time Trial Coding Quiz</h2>
-        <p class="card-text">
-          Answer the following questions to the best of your ability.
-        </p>
-        <p>
-          Once quiz starts, a timer of 60 seconds will appear at the right-hand
-          corner of your screen.
-        </p>
-        <p>Wrong answers will result in a 10 second penalty.</p>
-        <p>Good Luck!</p>
-        <a href="#" class="btn btn-primary" id="start-btn">Start Coding Quiz</a>
+    <div class="container">
+      <div class="card text-center">
+        <div class="card-body">
+          <h2 class="card-title">Time Trial Coding Quiz</h2>
+          <p class="card-text">
+            Answer the following questions to the best of your ability.
+          </p>
+          <p>
+            Once quiz starts, a timer of 60 seconds will appear at the
+            right-hand corner of your screen.
+          </p>
+          <p>Wrong answers will result in a 10 second penalty.</p>
+          <p>Good Luck!</p>
+          <button class="btn btn-primary" id="start-btn">
+            Start Coding Quiz
+          </button>
+        </div>
       </div>
     </div>
     <!-- End card -->
 
-    
+    <!-- Modal to show high scores when game is over -->
+
     <script src="./script.js"></script>
   </body>
 </html>
