@@ -3,10 +3,14 @@ var startCodingQuizBtn = document.getElementById("start-btn");
 var questionContainer = document.getElementById("question-container");
 var paragraphPrompt = document.getElementById("paragraph-prompt");
 var questionEl = document.getElementById("question");
-var answerButtonsEl = document.getElementById("answers");
 var timeEl = document.querySelector(".time");
 var secondsLeft = 90;
 
+// create variables for answer buttons
+var answerButtonA = document.getElementById("A");
+var answerButtonB = document.getElementById("B");
+var answerButtonC = document.getElementById("C");
+var answerButtonD = document.getElementById("D");
 
 startCodingQuizBtn.addEventListener("click", startQuiz);
 
@@ -55,12 +59,47 @@ function startQuiz() {
 
     var questionPrompts = [
         {
-            question: "Commonly used data types DO NOT include:",
-            answers: [
-                { text: "strings", correct: false },
-                { text: "booleans", correct: false },
-                { text: "alerts", correct: true },
-                { text: "numbers", correct: false },
-            ]
-        }
-    ]
+          questionOne: "Commonly used data types DO NOT include:",
+          A: "strings",
+          B: "booleans",
+          C: "alerts",
+          D: "numbers",
+          correctAnswerOne: "C",
+        },
+        {
+          questionTwo:
+            "The condition in an if/else statement is enclosed within ______.",
+          A: "quotes",
+          B: "curly brackets",
+          C: "parentheses",
+          D: "square brackets",
+          correctAnswerTwo: "C",
+        },
+        {
+          questionThree: "Arrays in JavaScript can be used to store _______.",
+          A: "numbers and strings",
+          B: "other arrays",
+          C: "booleans",
+          D: "all of the above",
+          correctAnswerThree: "D",
+        },
+        {
+          questionFour:
+            "String values must be enclosed within ____ when being assigned to variables",
+          A: "commas",
+          B: "curly brackets",
+          C: "quotes",
+          D: "parentheses",
+          correctAnswerFour: "C",
+        },
+        {
+          questionFive:
+            "A very useful tool used during development and debugging for printing content to the debugger is:",
+          A: "JavaScript",
+          B: "terminal/bash",
+          C: "for loops",
+          D: "console.log",
+          correctAnswerFive: "D",
+        },
+      ];
+      console.log(questionPrompts);
