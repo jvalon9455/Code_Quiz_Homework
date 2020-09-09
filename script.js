@@ -1,35 +1,23 @@
 // console.log("Hello World")
+var startCodingQuizBtn = document.getElementById("start-btn")
+var questionContainer = document.getElementById("question-container")
+var paragraphPrompt = document.getElementById("paragraph-prompt")
 
-var timeClock = document.getElementById("time-clock");
-var startButton = document.getElementById("start-btn");
-var buttonList = document.getElementById("answer-btn");
-
-startButton.addEventListener("click", startQuiz)
+startCodingQuizBtn.addEventListener("click", startQuiz)
 
 function startQuiz(){
-    console.log("Started quiz")
-    startButton.classList.add("hide")
-    buttonList.classList.remove("hide")
-    nextQuestion()
+    // console.log("Started quiz")It works!
+    startCodingQuizBtn.classList.add("hide")
+    paragraphPrompt.classList.add("hide")
+    questionContainer.classList.remove("hide")
 
 }
 
-function nextQuestion(){
+function nextQuestionEl(){
 
 }
 
-function pickedAnswer(){
+
+function selectAnswer(){
 
 }
-
-var quizQuestionArray = [
-    {
-      question: "Commonly used data types DO NOT include:",
-      answers: [
-        { text: "strings", correct: false },
-        { text: "booleans", correct: false },
-        { text: "alerts", correct: true },
-        { text: "numbers", correct: false },
-      ],
-    },
-]
