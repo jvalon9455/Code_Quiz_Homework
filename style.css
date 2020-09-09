@@ -1,0 +1,40 @@
+*, *::before, *::after{
+box-sizing: border-box;
+}
+
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    border-radius: 5px;
+    padding: 75px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.button-list{
+    display: grid;
+    gap: 10px;
+}
+
+.btn{
+    background-color: rgb(48, 84, 151);
+    border-color: black;
+    color: white;
+}
+
+#start-btn{
+    background-color:rgb(48, 84, 151);
+    border-color: black;
+}
+
+#start-btn:hover{
+    border-color: white;
+}
+
+.btn:hover{
+    border-color: white;
+}
+
+.hide{
+    display: none;
+}
