@@ -24,6 +24,7 @@
     <!-- Begin navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">View Highscores</a>
+      <div id="view-high-scores"></div>
       <button
         class="navbar-toggler"
         type="button"
@@ -37,7 +38,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto"></ul>
-        <span class="navbar-text" id="time-clock"> Timer </span>
+        <span class="navbar-text" id="time-clock"></span>
+        <div class="time">Timer</div>
       </div>
     </nav>
     <!-- End navbar -->
@@ -48,12 +50,8 @@
         <div class="card-body">
           <h2 class="card-title">Time Trial Coding Quiz</h2>
       </div>
-      <div id="question-list">
-          <div id="questions-asked">
-<!-- This is where the questions will appear -->
-          </div>
-      </div>
       <div id="question-container" class="hide">
+          <div id="question"></div>
       <div id="answer-btn" class="button-list">
           <button class="btn">A</button>
           <button class="btn">B</button>
@@ -81,6 +79,6 @@
     <!-- End card -->
 
 
-    <script src="./script.js"></script>
+    <script src="./script.js" type="text/javascript"></script>
   </body>
 </html>
