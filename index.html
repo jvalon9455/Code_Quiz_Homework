@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <!-- Begin navbar -->
+    <!-- Begin navbar. Add View High Scores. Add Timer-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">View Highscores</a>
       <div id="view-high-scores"></div>
@@ -45,7 +45,7 @@
     <!-- End navbar -->
 
     <!-- Create a card to hold instructions and button -->
-    <div class="container">
+    <section class="container">
       <div class="card text-center">
         <div class="card-body">
           <h2 class="card-title">Time Trial Coding Quiz</h2>
@@ -53,10 +53,10 @@
       <div id="question-container" class="hide">
           <div id="question"></div>
       <div id="answer-btn" class="button-list">
-          <button id="A" class="btn opt btn-dark" value="A">A</button>
-          <button id="B" class="btn opt btn-dark" value="B">B</button>
-          <button id="C" class="btn opt btn-dark" value="C">C</button>
-          <button id="D" class="btn opt btn-dark" value="D">D</button>
+          <button id="A" class="btn opt btn-light" value="A">A</button>
+          <button id="B" class="btn opt btn-light" value="B">B</button>
+          <button id="C" class="btn opt btn-light" value="C">C</button>
+          <button id="D" class="btn opt btn-light" value="D">D</button>
       </div>
     </div>
     <div id="paragraph-prompt">
@@ -75,8 +75,36 @@
           </button>
         </div>
       </div>
-    </div>
+    </section>
     <!-- End card -->
+
+    <!-- Endgame section -->
+    <section id=endGamePage>
+        <h1 class="mt-4 mb-4">Quiz Done!</h1>
+        <p>Your final score is <span id="finalScore">#</span></p>
+        <form class="form-inline">
+          <div class="form-group mb-2">
+            <input
+              type="text"
+              readonly
+              class="form-control-plaintext"
+              value="Enter Your Intials: "
+            />
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="userInitials" class="sr-only">userInitials</label>
+            <input
+              type="text"
+              class="form-control"
+              id="userInitials"
+            />
+          </div>
+          <button id="submitButton" type="submit" class="btn btn-primary mb-2">
+            Submit
+          </button>
+        </form>
+      </section>
+    </section>
 
 
     <script src="./script.js" type="text/javascript"></script>
