@@ -174,5 +174,7 @@ function endQuiz() {
     timeEl.textContent = "0";
     finalScore.textContent = score;
     
-   
+// submit highscore with initials
+// save it in local storage
+// YOU GOT THIS! Redo whenever you have freetime to get better and find simpler solutions
 }
