@@ -6,7 +6,7 @@ var questionEl = document.getElementById("question");
 var answerEl = document.getElementById("answer-btn")
 var timeEl = document.querySelector(".time");
 var secondsLeft = 90;
-var endGame = document.getElementById("endGamePage");
+var endQuizEl = document.getElementById("endQuizPage");
 var score = 0;
 
 // create variables for answer buttons
@@ -15,9 +15,13 @@ var answerButtonB = document.getElementById("B");
 var answerButtonC = document.getElementById("C");
 var answerButtonD = document.getElementById("D");
 
+// add click function to start quiz
 startCodingQuizBtn.addEventListener("click", startQuiz);
+
+// hide endgame submission form before start of game
 endGame.classList.add("hide");
 
+// start timer
 function setTime() {
     var timerInterval = setInterval(function () {
         secondsLeft--;
@@ -28,6 +32,7 @@ function setTime() {
     }, 1000);
 }
 
+// create question array with questions and answers
 var questionPrompts = [
     {
         firstQuestion: "Commonly used data types DO NOT include:",
@@ -73,8 +78,8 @@ var questionPrompts = [
         correctAnswerFive: "A",
     },
 ]; 
-
 //   console.log(questionPrompts);
+
 // start the quiz and show the first question
 function startQuiz() {
     // console.log("Started quiz")It works!
@@ -161,8 +166,9 @@ answerEl.addEventListener("click", function (event) {
     }
 });
 
+// create endquiz
 function endQuiz() {
-     endGame.classList.remove("hide");
+     endQuizPage.classList.remove("hide");
      console.log("hide")
      clearInterval(timerInterval);
     timeEl.textContent = "0";
