@@ -19,7 +19,7 @@ var answerButtonD = document.getElementById("D");
 startCodingQuizBtn.addEventListener("click", startQuiz);
 
 // hide endgame submission form before start of game
-endGame.classList.add("hide");
+endQuizEl.classList.add("hide");
 
 // start timer
 function setTime() {
@@ -173,8 +173,9 @@ function endQuiz() {
      clearInterval(timerInterval);
     timeEl.textContent = "0";
     finalScore.textContent = score;
+}
     
 // submit highscore with initials
 // save it in local storage
 // YOU GOT THIS! Redo whenever you have freetime to get better and find simpler solutions
-}
+
